@@ -1,0 +1,66 @@
+
+    /* Default Styles for larger screens (already set via Tailwind classes) */
+
+    /* Media Query for smaller devices (max width 768px) */
+    @media screen and (max-width: 768px) {
+        /* Navbar: Stack navigation items */
+        nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            width: 100%;
+            text-align: left;
+        }
+
+        /* Hero Section: Center-align image */
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Mengapa Memilih Kami: Stack reasons vertically */
+        .reason-container {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Footer: Stack columns */
+        footer .grid {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        footer .grid div {
+            margin-bottom: 1rem;
+        }
+
+        footer .grid div:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    /* Media Query for extra-small devices (max width 480px) */
+    @media screen and (max-width: 480px) {
+        /* Hero Section: Smaller font sizes */
+        .hero h1 {
+            font-size: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+        }
+
+        /* Footer: Smaller icons */
+        footer img {
+            width: 50px;
+            height: 50px;
+        }
+
+        footer .grid a {
+            font-size: 0.8rem;
+        }
+    }
+

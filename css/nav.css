@@ -1,0 +1,46 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #4C7853; /* Warna hijau tua */
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    margin-right: 20px;
+}
+
+.navbar-brand .logo-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 3px solid #32CD32; /* Warna hijau terang */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-circle .logo-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #FFD700; /* Warna emas */
+}
