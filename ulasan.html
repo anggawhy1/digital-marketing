@@ -7,6 +7,7 @@
     <title>GudangBapak - Ulasan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <style>
         /* Animasi scroll */
@@ -25,6 +26,13 @@
         .hover-scale:hover {
             transform: scale(1.05);
             transition: transform 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
         }
     </style>
 </head>
