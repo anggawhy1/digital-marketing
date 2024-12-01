@@ -51,68 +51,89 @@
         </div>
     </nav>
 
-    <section class="py-12 bg-gray-100 fade-in">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-3xl font-bold text-green-700 text-center mb-6">Hubungi Kami</h2>
-            <p class="text-lg text-gray-600 text-center mb-10">
-                Kami siap membantu Anda. Jangan ragu untuk menghubungi kami melalui form di bawah ini atau melalui
-                kontak yang tersedia.
-            </p>
+    <section class="py-12 bg-gray-50">
+        <!-- Container Utama -->
+        <div class="container mx-auto px-6 max-w-4xl">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-green-700 mb-4">Hubungi Kami</h2>
+                <p class="text-lg text-gray-600">
+                    Kami siap membantu Anda. Jangan ragu untuk menghubungi kami melalui kontak yang tersedia.
+                </p>
+            </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold text-green-700 mb-4">Kirim Pesan</h3>
-                    <form>
-                        <div class="mb-4">
-                            <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
-                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda"
-                                class="w-full border border-gray-300 bg-gray-100 rounded-lg p-3 focus:ring focus:ring-green-300 focus:bg-white">
-                        </div>
-                        <div class="mb-4">
-                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda"
-                                class="w-full border border-gray-300 bg-gray-100 rounded-lg p-3 focus:ring focus:ring-green-300 focus:bg-white">
-                        </div>
-                        <div class="mb-4">
-                            <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda di sini"
-                                class="w-full border border-gray-300 bg-gray-100 rounded-lg p-3 focus:ring focus:ring-green-300 focus:bg-white"></textarea>
-                        </div>
-                        <button type="submit"
-                            class="w-full bg-green-700 text-white py-3 px-6 rounded-lg hover:bg-green-800 transition hover-scale">
-                            Kirim Pesan
-                        </button>
-                    </form>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-green-700 mb-4">Informasi Kontak</h3>
-                    <p class="text-gray-600 mb-4">
+            <!-- Grid Konten -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Kolom Informasi Kontak -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-6">Informasi Kontak</h3>
+                    <p class="text-gray-600 mb-6">
                         Jika Anda memiliki pertanyaan atau butuh informasi lebih lanjut, hubungi kami melalui informasi
                         berikut:
                     </p>
-                    <ul class="space-y-4">
+                    <ul class="space-y-6">
                         <li class="flex items-center">
                             <i class="fas fa-phone-alt text-green-700 text-2xl mr-4"></i>
-                            <span class="text-gray-700">+62 856-4753-0308</span>
+                            <span class="text-gray-700 text-lg">+62 856-4753-0308</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-envelope text-green-700 text-2xl mr-4"></i>
-                            <span class="text-gray-700">support@gudangbapak.com</span>
+                            <span class="text-gray-700 text-lg">support@gudangbapak.com</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-map-marker-alt text-green-700 text-2xl mr-4"></i>
-                            <span class="text-gray-700">Parakan Kulon, Sendangsari, Minggir, Sleman, DIY</span>
+                            <span class="text-gray-700 text-lg">Parakan Kulon, Sendangsari, Minggir, Sleman, DIY</span>
                         </li>
                     </ul>
-                    <div class="mt-6">
-                        <h3 class="text-lg font-semibold text-green-700 mb-2">Jam Operasional</h3>
-                        <p class="text-gray-600">Senin - Jumat: 08.00 - 17.00</p>
-                        <p class="text-gray-600">Sabtu: 09.00 - 14.00</p>
+                </div>
+
+                <!-- Kolom Jam Operasional -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-6">Jam Operasional</h3>
+                    <table class="w-full text-lg text-left text-gray-700 mb-6">
+                        <tbody>
+                            <tr>
+                                <td class="text-gray-700 text-lg">Senin - Jumat:</td>
+                                <td class="py-2">08.00 - 17.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-gray-700 text-lg">Sabtu:</td>
+                                <td class="py-2">09.00 - 17.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Catatan Tambahan -->
+                    <p class="text-gray-600 mb-4">
+                        * Mohon hubungi kami sebelum berkunjung di luar jam operasional. Layanan di luar jam kerja hanya
+                        dengan perjanjian.
+                    </p>
+
+                    <!-- Tombol -->
+                    <div class="flex gap-4">
+                        <!-- <a href="https://wa.me/6285647530308" target="_blank" rel="noopener noreferrer"
+                            class="bg-green-700 text-white py-2 px-4 rounded-lg text-sm hover:bg-green-800 transition">
+                            Hubungi via WhatsApp
+                        </a> -->
+                        <a 
+                            class="bg-gray-200 text-gray-700 py-2 px-4 rounded-lg text-sm hover:bg-gray-300 transition">
+                            Kami Siap Melayani Anda, Jangan Sungkan Untuk Bertanya 😊
+                        </a>
                     </div>
                 </div>
             </div>
+
+            <!-- Tombol Utama -->
+            <div class="text-center mt-12">
+                <a href="https://wa.me/6285647530308" target="_blank" rel="noopener noreferrer"
+                    class="bg-green-700 text-white py-3 px-8 rounded-lg hover:bg-green-800 transition">
+                    Kirim Pesan ke WhatsApp
+                </a>
+            </div>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer class="bg-green-700 text-white py-8">
