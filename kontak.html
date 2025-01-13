@@ -28,23 +28,43 @@
             transition: transform 0.3s ease;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-        }
+
 
         * {
             box-sizing: border-box;
         }
+
         /* Navbar */
         nav {
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 20px;
-            padding-right: 20px;
+            margin: 0;
+            /* Hilangkan margin kiri dan kanan */
+            padding: 0;
+            /* Hilangkan padding bawaan */
+            width: 100%;
+            /* Pastikan navbar mengambil seluruh lebar layar */
         }
+
+        /* Atur menu dropdown pada mode mobile */
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            /* Hilangkan bullet list */
+            background-color: #047857;
+            /* Hijau sesuai tema */
+            width: 100%;
+            /* Pastikan menu juga full-width */
+        }
+
+        /* Mode Desktop */
+        @media (min-width: 768px) {
+            nav {
+                padding-left: 20px;
+                /* Tambahkan padding untuk desktop */
+                padding-right: 20px;
+            }
+        }
+
 
         /* Footer */
         footer {
@@ -108,7 +128,7 @@
                     Kami siap membantu Anda. Jangan ragu untuk menghubungi kami melalui kontak yang tersedia.
                 </p>
             </div>
-    
+
             <!-- Grid Konten -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Kolom Informasi Kontak -->
@@ -129,7 +149,7 @@
                         </li>
                     </ul>
                 </div>
-    
+
                 <!-- Kolom Jam Operasional -->
                 <div class="bg-white shadow-md rounded-lg p-6">
                     <h3 class="text-2xl font-semibold text-green-700 mb-6">Jam Operasional</h3>
@@ -145,23 +165,22 @@
                             </tr>
                         </tbody>
                     </table>
-    
+
                     <!-- Catatan Tambahan -->
                     <p class="text-gray-600 mb-4">
                         * Mohon hubungi kami sebelum berkunjung di luar jam operasional. Layanan di luar jam kerja hanya
                         dengan perjanjian.
                     </p>
-    
+
                     <!-- Tombol -->
                     <div class="flex gap-4">
-                        <a 
-                            class="bg-gray-200 text-gray-700 py-2 px-4 rounded-lg text-sm hover:bg-gray-300 transition">
+                        <a class="bg-gray-200 text-gray-700 py-2 px-4 rounded-lg text-sm hover:bg-gray-300 transition">
                             Kami Siap Melayani Anda, Jangan Sungkan Untuk Bertanya 😊
                         </a>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Tombol Utama -->
             <div class="text-center mt-12">
                 <a href="https://wa.me/6285647530308" target="_blank" rel="noopener noreferrer"
@@ -171,7 +190,7 @@
             </div>
         </div>
     </section>
-    
+
 
 
     <!-- Footer -->

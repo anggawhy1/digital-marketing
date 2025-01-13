@@ -28,24 +28,43 @@
             transition: transform 0.3s ease;
         }
 
-        @media (max-width: 768px) {
-            .container {
+        /* Navbar */
+        nav {
+            margin: 0;
+            /* Hilangkan margin kiri dan kanan */
+            padding: 0;
+            /* Hilangkan padding bawaan */
+            width: 100%;
+            /* Pastikan navbar mengambil seluruh lebar layar */
+        }
+
+        /* Atur menu dropdown pada mode mobile */
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            /* Hilangkan bullet list */
+            background-color: #047857;
+            /* Hijau sesuai tema */
+            width: 100%;
+            /* Pastikan menu juga full-width */
+        }
+
+        /* Mode Desktop */
+        @media (min-width: 768px) {
+            nav {
                 padding-left: 20px;
+                /* Tambahkan padding untuk desktop */
                 padding-right: 20px;
             }
         }
+
 
         * {
             box-sizing: border-box;
         }
 
-        /* Navbar */
-        nav {
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+
 
         /* Footer */
         footer {
